@@ -1,0 +1,144 @@
+/* Declare the font globally */
+@font-face {
+    font-family: 'BAUHS93';
+    src: url('./BAUHS93.woff') format('woff');
+}
+
+/* Reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: white;
+}
+
+/* Apply the custom font to the logo */
+.logo {
+    text-decoration: none;
+    color: #00f5d4;
+    font-size: 28px;
+    font-family: 'BAUHS93', sans-serif; /* BAUHS93 with Arial fallback */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00f5d4;
+}
+
+.search-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 250px;
+    
+}
+
+.search-section input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #00f5d4;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 18px;
+}
+
+.search-section button {
+    background-color: transparent;
+    border: none;
+    margin-left: -40px;
+}
+
+.search-section button img {
+    width: 30px;
+    height: 30px;
+    background-color: #00f5d4;
+    border-radius: 100px;
+}
+
+.about-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    color: #00f5d4;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Table styling */
+.about-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: white;
+}
+
+.about-table th, .about-table td {
+    border: 1px solid #00f5d4;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.about-table th {
+    background-color: #00f5d4;
+    color: black;
+}
+
+/* Team section */
+.team-section h3 {
+    font-size: 30px;
+    color: #00f5d4;
+    margin-top: 40px;
+}
+
+.team-section p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+
